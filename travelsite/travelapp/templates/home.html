@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+  <div style="background-image: url('/static/images/travel-hero.png'); background-size: cover; height: 400px; display: flex; justify-content: center; align-items: center;">
+    <div style="background-color: rgba(255, 255, 255, 0.7); padding: 30px; text-align: center;">
+      <h1 style="font-family: 'Open Sans', sans-serif;">Welcome to our travel website!</h1>
+      <p style="font-family: 'Roboto', sans-serif;">Discover new places, experience different cultures, and create unforgettable memories with our travel services.</p>
+      <a href="#" style="background-color: #ffc107; color: #fff; padding: 10px 20px; font-family: 'Lato', sans-serif; text-decoration: none; border-radius: 5px;">Sign up for our newsletter</a>
+    </div>
+  </div>
+
+  <div style="align-items: center; background-color: #f8b1ca; padding: 30px;">
+    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+    <h2 style="font-family: 'Open Sans', sans-serif; margin-bottom: 20px;">Why Choose Us?</h2>
+    </div>
+    <div style="display: flex; align-items: center; width: 100%; justify-content: space-evenly;">
+      <div style="width: 600px; text-align: center; padding:20px">
+        <img src="/static/images/guide.png" alt="icon1" style="width: 300px; height: 200px;">
+        <h3 style="font-family: 'Lato', sans-serif; margin-top: 20px;">Expert Guides</h3>
+        <p style="font-family: 'Roboto', sans-serif;">Our experienced travel guides are passionate about helping you make the most of your journey.</p>
+      </div>
+      <div style="width: 600px; text-align: center; padding:20px">
+        <img src="/static/images/itinerary.png" alt="icon2" style="width: 300px; height: 200px;">
+        <h3 style="font-family: 'Lato', sans-serif; margin-top: 20px;">Tailored Itineraries</h3>
+        <p style="font-family: 'Roboto', sans-serif;">We offer personalized itineraries that are designed to meet your unique interests and preferences.</p>
+      </div>
+      <div style="width: 600px; text-align: center; padding:20px">
+        <img src="/static/images/experience.png" alt="icon3" style="width: 300px; height: 200px;">
+        <h3 style="font-family: 'Lato', sans-serif; margin-top: 20px;">Unforgettable Experiences</h3>
+        <p style="font-family: 'Roboto', sans-serif;">We strive to create unforgettable travel experiences that will last a lifetime.</p>
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}

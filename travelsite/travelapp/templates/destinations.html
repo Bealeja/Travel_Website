@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+        /* Nav Bar Styles */
+        header {
+            background-color: #aec6cf; /* Use blue to match pastel pink as the home page */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff; /* Use white text color */
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif; /* Use the same font family as the home page */
+            font-size: 18px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #ffc107; /* Use a contrasting yellow color on hover */
+        }
+    </style>
+<h1>Our Destinations</h1>
+<p>Here are some of the amazing destinations we offer:</p>
+<ul>
+    <li>
+        <h2>Destination 1</h2>
+        <img src="destination1.jpg" alt="Destination 1">
+        <p>
+            Destination 1 is a tropical paradise with pristine beaches, crystal-clear waters, and lush jungles. It's the perfect place to relax and unwind, or to explore the natural beauty of the area through hiking, snorkeling, or kayaking. Some must-see attractions include the local wildlife reserve, the famous underwater caves, and the picturesque lighthouse overlooking the bay.
+        </p>
+        <blockquote>
+            "I can't believe how beautiful Destination 1 is! It exceeded all of my expectations and more. The beaches are absolutely stunning, and the wildlife is incredible. I can't wait to come back!" - Jane D., satisfied customer
+        </blockquote>
+        <a href="/destination1/map">View Map</a>
+        <a href="/destination1/tips">Travel Tips</a>
+    </li>
+    <li>
+        <h2>Destination 2</h2>
+        <img src="destination2.jpg" alt="Destination 2">
+        <p>
+            Destination 2 is a vibrant and bustling city with a rich history and culture. From its ancient landmarks and museums to its modern art galleries and restaurants, there's always something to see and do. Don't miss the local markets and street vendors, where you can sample some of the best street food and handicrafts in the region.
+        </p>
+        <blockquote>
+            "Destination 2 is truly a one-of-a-kind city. I was blown away by the architecture, the food, and the people. There's so much to explore and discover here, and I can't wait to come back and see more!" - John S., satisfied customer
+        </blockquote>
+        <a href="/destination2/map">View Map</a>
+        <a href="/destination2/tips">Travel Tips</a>
+    </li>
+    <li>
+        <h2>Destination 3</h2>
+        <img src="destination3.jpg" alt="Destination 3">
+        <p>
+            Destination 3 is a nature-lover's paradise, with rugged mountains, dense forests, and cascading waterfalls. Whether you prefer hiking, camping, or just soaking in the natural beauty, there's something for everyone here. Be sure to check out the local hot springs and wildlife sanctuary for a truly unique experience.
+        </p>
+        <blockquote>
+            "Destination 3 was the perfect getaway for me. I love being in nature, and this place was absolutely breathtaking. The hiking trails were challenging but rewarding, and the hot springs were so relaxing. I would highly recommend this destination to anyone looking to escape the hustle and bustle of city life." - Sarah L., satisfied customer
+        </blockquote>
+        <a href="/destination3/map">View Map</a>
+        <a href="/destination3/tips">Travel Tips</a>
+    </li>
+</ul>
+{% endblock %}

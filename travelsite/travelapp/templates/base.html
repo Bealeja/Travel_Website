@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        /* Nav Bar Styles */
+        header {
+            background-color: #aec6cf; /* Use blue to match pastel pink as the home page */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff; /* Use white text color */
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif; /* Use the same font family as the home page */
+            font-size: 18px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #ffc107; /* Use a contrasting yellow color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="{% url 'home' %}">
+            <h1 style="font-family: 'Lato', sans-serif; color: white">Travel Website</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'destinations' %}">Destinations</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+                <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2023 Django Travel Website</p>
+    </footer>
+<script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings =
+            {"appId":"37a43e190c9018b2034f2dc522cf65142","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+</body>
+</html>
