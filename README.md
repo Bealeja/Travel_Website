@@ -22,12 +22,12 @@ Performing system checks...
 System check identified no issues (0 silenced).
 April 05, 2023 - 13:03:19
 Django version 4.1.7, using settings 'travelsite.settings'
-Starting development server at http://127.0.0.1:8000/
+Starting development server at http://localhost:8000/travelapp/home/
 Quit the server with CTRL-BREAK.
 
 
 Open a browser and input the development server address, in this case it's
 
-http://127.0.0.1:8000/
+http://localhost:8000/travelapp/home/
 
 The site is now accessible and the chatbot is enabled.
